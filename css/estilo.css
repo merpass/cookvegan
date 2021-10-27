@@ -93,7 +93,7 @@ header {
             color: black;
             text-shadow: 1px 1px 2px black; }
   header .banner {
-    background-image: url(/imagenes/147.jpg);
+    background-image: url(./imagenes/147.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
