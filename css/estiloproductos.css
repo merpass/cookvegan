@@ -1,0 +1,205 @@
+/*FUENTES*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,400&display=swap");
+/*VARIABLES*/
+/*HTML*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%; }
+
+header {
+    width: 100%;
+    height: 35vh; }
+    header nav {
+      height: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      box-shadow: 1px 1px 20px black;
+      position: fixed;
+      top: 0;
+      z-index: 200; }
+      header nav .logo {
+        font-weight: 700;
+        width: 100px;
+        margin-left: 20px;
+        font-size: 30px; }
+        header nav .logo .logo-boton {
+          color: black; }
+          header nav .logo .logo-boton:visited {
+            color: black; }
+          header nav .logo .logo-boton strong {
+            color: #005801;
+            font-weight: 700; }
+      header nav #check {
+        display: none; }
+        header nav #check:checked ~ .nav-menu {
+          height: 100vh; }
+        header nav #check:checked ~ .nav-menu li {
+          display: block; }
+        header nav #check:checked ~ label img {
+          transform: rotateZ(270deg); }
+      header nav label img {
+        margin-top: 5px;
+        margin-right: 30px;
+        cursor: pointer;
+        transition: all .5s; }
+        header nav label img:hover {
+          background-color: rgba(0, 0, 0, 0.1);
+          border-radius: 5px; }
+      header nav .nav-menu {
+        position: fixed;
+        width: 100%;
+        height: 0vh;
+        top: 50px;
+        background-color: #fff;
+        text-align: center;
+        transition: all .5s;
+        z-index: 100; }
+        header nav .nav-menu li {
+          position: relative;
+          display: none;
+          line-height: 30px;
+          margin: 50px 0;
+          transition: all .5s; }
+          header nav .nav-menu li .status {
+            color: #000;
+            opacity: .5;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: .3s; }
+          header nav .nav-menu li a {
+            color: green;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: .4s; }
+            header nav .nav-menu li a:hover {
+              font-size: 1.7rem;
+              color: black;
+              text-shadow: 1px 1px 2px black; }
+    header .banner {
+      background-image: url(/imagenes/113.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center; }
+      header .banner .banner-text-1 {
+        color: #fff;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 5px black; }
+      header .banner .banner-text-2 {
+        color: #fff;
+        font-size: 1.7rem;
+        text-align: center;
+        font-weight: 800;
+        text-shadow: 1px 1px 5px black; }
+        header .banner .banner-text-2 b {
+          color: green;
+          font-weight: 800; }
+main{
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px -2px 20px black;}
+    main .title-products{
+      color: #005801;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 800;
+      padding: 40px 10px 20px;}
+        main .productos{
+            height: 100%;
+        }
+        main .productos .title-div{
+            color: #000;
+            text-transform: uppercase;
+            padding: 10px;
+            background-color: #00580148;
+            font-weight: 500;
+            margin-top: 20px;}
+        main .productos .cartas{
+            display: flex;
+            justify-content: row;
+            overflow: scroll;}
+        main .productos .card{
+            background-color: #fff;
+            border: 5px solid #005801;
+            width: 200px;
+            height: 300px;
+            box-shadow: 1px 1px 5px black;
+            margin: 20px; }
+        main .productos .card p{
+          text-align: center;
+        }
+        main .productos .imagenes-productos{
+            width: 190px;
+            padding: 10px;}
+footer {
+  width: 100%; }
+  footer .box-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #005801;
+    padding: 10px;
+    text-align: center; }
+      footer .box-info .boxes h4 {
+      color: #fff;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px black; }
+      footer .box-info .boxes p {
+      font-size: 0.8rem;
+      align-items: center;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #fff; }
+      footer .box-info .boxes p img {
+        width: 20px;
+        margin-bottom: -5px; }
+      footer .box-info .boxes p .logo-ubicacion {
+        margin-bottom: -8px; }
+      footer .box-info .boxes p .logo-instagram {
+        width: 18px;
+        margin-bottom: -7px; }
+      footer .box-info .boxes p b {
+        margin-left: 23px; }
+  footer .metodos-de-pago {
+    margin-top: 20px; }
+    footer .metodos-de-pago .title-metodos {
+      color: #005801;
+      font-size: 1rem;
+      text-align: center; }
+    footer .metodos-de-pago .metodos {
+      margin: 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      footer .metodos-de-pago .metodos img {
+        width: 60px; }
+
+
